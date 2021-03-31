@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>SALAS</title>
+		<meta charset="utf-8"  />
+		<link href="estilos_salas.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body class="body">
+		<!--Header con enlaces a las otras páginas y logotipo-->
+		<header id="header">
+			<nav>
+				<ul>
+					<li>
+						<a href="./">INICIO</a>
+					</li>
+					<li>
+					<a href="./localizacion.html">LOCALIZACION</a>	
+					</li>
+					<li>
+					<a href="./salas.html">SALAS</a>	
+					</li>
+					<li>
+					<a href="./reserva.html">RESERVA</a>	
+					</li>
+					<li>
+					<img src="logotipo.jpg" width = "65" height = "65" alt="logotipo">
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--Habitación 1-->
+		<div id="habitaciones">
+			<div class="room">				
+				<br>				
+				No ve bien la letra?? Entonces <a href="#" onclick="CambioLetra();">pincha aqui!</a> 
+				<br>
+				<p class="titulo_rooms estilo_letra">SUITE BURGUER</p>				
+				<div class="info">
+					<table class="servicios">
+						<tr>
+							<th>Servicios</th>
+							<th>Ofertados</th>
+						</tr>
+						<tr>
+							<td>Cocina</td>
+							<td>Sí</td>
+						</tr>
+						<tr>
+							<td>Jacuzzi</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Cama triple</td>
+							<td>Sí</td>
+						</tr>
+						<tr>
+							<td>Terraza</td>
+							<td>Sí</td>
+						</tr>							
+					</table>
+					<br><p>Situada en la última planta, la Suite Burguer cuenta con unas increíbles vistas de todo el complejo y de la ciudad.</p>
+					<p>Con numerosas comodidades, podrá disfrutar de un desayuno royale desde su terraza.</p>
+				</div>
+				<div  class="room_image">
+					<img src="room1.jpg" alt="Habitacion 1">
+				</div>
+			</div>
+			
+			<hr>
+
+			<!--Habitación 2-->
+			<div class="room">
+				<p class="titulo_rooms estilo_letra">SUITE MACDONAL</p>
+				<div class="info">
+					<table class="servicios">
+						<tr>
+							<th>Servicios</th>
+							<th>Ofertados</th>
+						</tr>
+						<tr>
+							<td>Cocina</td>
+							<td>Sí</td>
+						</tr>
+						<tr>
+							<td>Jacuzzi</td>
+							<td>Sí</td>
+						</tr>
+						<tr>
+							<td>Cama doble</td>
+							<td>Sí</td>
+						</tr>
+						<tr>
+							<td>Terraza</td>
+							<td>No</td>
+						</tr>								
+					</table>
+					<br><p>Con un precio más económico, la Suite Macdonal, situada en la planta undécima, también cuenta con hermosas vistas.</p>
+					<p>A diferencia de la Suite Burguer no tiene terraza, pero cuenta con una de las comodidades más demandadas actualmente, un jacuzzi con capacidad para cuatro personas, genial para estar en familia</p>
+				</div>
+				<div  class="room_image">
+					<img src="room2.jpg" alt="Habitacion 2">
+				</div>
+			</div>
+		</div>
+
+		<!--Footer, contacto y copyright-->
+		<footer id = "footer_id" >
+			<div>
+				Correo:<a href="mailto:hotelesmagnificos@gmail.com"> hotelesmagnificos@gmail.com</a>
+			</div>
+
+			 <div class="text-center p-3" >
+    			© 2020 Copyright.
+    		</div>
+		</footer>
+
+		<script src="js/bootstrap.js"></script>
+
+		<script>
+			function CambioLetra()
+			{
+				// Agranda la letra
+				document.getElementById("habitaciones").style.fontSize = "x-large";
+			}
+		</script>		
+	</body>
+</html>

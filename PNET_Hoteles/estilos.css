@@ -1,0 +1,81 @@
+header
+{
+   position: fixed;
+   top: 0px;
+   width: 100%;
+}
+
+nav
+{
+   background-color:#F8E4E4;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav a, h2
+{
+   text-decoration:none;
+   color: black;
+   font-size:22px;
+   font-weight: bold;
+   font-style: italic;
+   -webkit-text-stroke: 0.7px rgb(198, 228, 235);
+} 
+
+nav li
+{
+    display:inline-block;
+    width:15%;
+    padding:10px 10px;
+    background-color:#F8E4E4;
+    text-align:center;
+    color:#000;
+}
+
+footer
+{
+   display: block;
+   padding: 30px;
+   width:100%;
+   background-color:#F8E4E4;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.body
+{
+   margin: 0;
+   background-color: rgba(198, 228, 235, 0.3);   
+}
+
+.title
+{
+    display: grid;
+    grid-row-gap: 3px;
+    align-self: center;
+}
+
+.estilo_letra
+{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   -webkit-text-stroke: 0.5px rgb(168, 221, 233);
+}
+
+@media screen and (max-width: 850px)
+{
+   nav li
+   {
+      float: none;
+      width:30%;
+      padding:5px 5px;
+   }
+}
+
+@media screen and (max-width: 850px)
+{
+   nav a
+   {
+      font-size:15px;
+      -webkit-text-stroke: 0.3px rgb(198, 228, 235);
+   }
+}
