@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<title>LOCALIZACIÓN</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="estilos_localizacion.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body class="body">
+	<!--Header con enlaces a las otras páginas y logotipo-->
+		<header id="header">
+			<nav>
+				<ul>
+					<li>
+						<a href="./">INICIO</a>
+					</li>
+					<li>
+					<a href="./localizacion.html">LOCALIZACION</a>	
+					</li>
+					<li>
+					<a href="./salas.html">SALAS</a>	
+					</li>
+					<li>
+					<a href="./reserva.html">RESERVA</a>	
+					</li>
+					<li>
+					<img src="logotipo.jpg" width = "65" height = "65" alt="logotipo">
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="fondo_loc">
+			<h2 style="text-align: center;">MAPA DE UBICACIÓN</h2>
+			<div  class="mapa" >
+				<iframe  class="embed-responsive-item"  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12842.1545219523!2d-6.120902999999999!3d36.42035635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1615540418768!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			<div id="texto">
+				<br>
+				No ve bien la letra?? Entonces <a href="#" onclick="CambioLetra();">pincha aqui!</a> 
+				<br>
+				<br>
+				Para llegar hasta nuestro magnifico hotel dispone de varios medios de transporte. Si llega a la ciudad en avión, ya que dispone de aeropuerto, puede encontrar en el mismo aeropuerto diferentes<a href="http://www.cmtbc.es/"> lineas de autobuses</a>  como numerosos <a href="https://taxilabarrosa.com/"> taxis</a> que estarán a su disposición.
+
+				<br>
+				<br>
+				Si ya se encuentra en la ciudad, puede usar los diferentes servicios de<a href="https://www.uber.com/es/es-es/"> Uber</a>  que dispone el hotel tambien, pero para ello deberia de contratarlo de antemano. Si se considera una persona deportista puede acudir en bicicleta donde podrá dejarla en nuetro parking de bicis que esta vigilado 24/7.
+				<br>
+				<br>
+				Obviamente tambien puede venir en su propio vehiculo que podra aparcar en nuestro parking o usar los medios de transportes públicos de la ciudad.
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<!--Footer, contacto y copyright-->
+		<footer id = "footer_id" >
+			<div>
+				Correo:<a href="mailto:hotelesmagnificos@gmail.com"> hotelesmagnificos@gmail.com</a>
+			</div>
+
+			 <div class="text-center p-3" >
+    			© 2020 Copyright.
+    		</div>
+		</footer>
+
+		<script src="js/bootstrap.js"></script>
+
+		<script>
+			function CambioLetra()
+			{
+				// Agranda la letra
+				 document.getElementById("texto").style.fontSize = "x-large";
+			}
+		</script>
+</body>
+</html>

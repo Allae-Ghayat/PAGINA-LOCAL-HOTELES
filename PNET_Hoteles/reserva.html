@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>RESERVA</title>
+		<meta charset="utf-8" />
+		<link href="estilos_reserva.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+	</head>
+	<body class="body">
+		<!--Header con enlaces a las otras páginas y logotipo-->
+		<header id="header">
+			<nav>
+				<ul>
+					<li>
+						<a href="./">INICIO</a>
+					</li>
+					<li>
+					<a href="./localizacion.html">LOCALIZACION</a>	
+					</li>
+					<li>
+					<a href="./salas.html">SALAS</a>	
+					</li>
+					<li>
+					<a href="./reserva.html">RESERVA</a>	
+					</li>
+					<li>
+					<img src="logotipo.jpg" width = "65" height = "65" alt="logotipo">
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="formulario">
+			<!--Formulario para hacer la reserva-->
+			<h4 class="estilo_letra">RESERVA TU HABITACIÓN ONLINE</h4>
+
+			<form action="index.html" method="POST" name="formulario" onsubmit="return ValidacionFormularios(this);">				
+				<div class="datos_personales">
+					<h5 class="estilo_letra">Datos personales</h5>
+					<!--Nombre y apellidos-->
+					<div>
+						<label for="nom" class="col-4 col-form-label estilo_letra"> NOMBRE</label>
+						<input type="text" name="nombre" id="nom"  size="35" placeholder="Nombre" required>
+					</div>
+					<div>
+						<label for="apel" class="col-4 col-form-label estilo_letra"> APELLIDO</label>
+						<input type="text" name="apellidos" id="apel" size="35" placeholder="Apellido" required>
+					</div>
+					
+					<!--Teléfono y correo-->
+					<div>
+						<label for="tel" class="col-4 col-form-label estilo_letra"> TELÉFONO</label>
+						<input type="tel" name="telefono" id="tel" size="35" placeholder="123456789" pattern="[0-9]{9}" required>
+					</div>
+					<div>
+						<label for="dir_cor" class="col-4 col-form-label estilo_letra"> DIRECCIÓN DE CORREO</label>
+						<input type="email" name="correo" id="dir_cor" size="35" placeholder="alvaro@gmail.com" required>
+					</div>	
+					
+					<!--País o región-->
+					<div>
+						<label for="pa" class="col-4 col-form-label estilo_letra"> PAÍS/REGIÓN</label>
+						<input type="text" name="pais" id="pa" size="35" placeholder="España" required>
+					</div>
+				</div>
+
+				<div class="otros_datos">					
+					<div id="izq">
+						<h5 class="estilo_letra">Habitaciones</h5>
+						<!--Tipo de sala-->
+						<div>
+							<label for="tip_sala" class="col-5 col-form-label estilo_letra"> TIPO DE SALA</label>
+
+							<select id="tip_sala" name="sel_sal" class="col-3">
+								<option value="1" selected="selected">Suite Burguer</option>
+								<option value="2">Suite Macdonal</option>
+							</select>
+							<br>
+							<a class="enlaces estilo_letra" href="./salas.html">SALAS</a>
+						</div>
+
+						<!--Número de habitaciones-->
+						<div>
+							<label for="s_hab" class="col-5 col-form-label estilo_letra">HABITACIONES</label>
+							<select id="s_hab" name="sel_nHab" class="col-3">
+								<option value="1" selected="selected">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>	
+						<!--Número de adultos-->
+						<div>
+							<label for="s_adul" class="col-5 col-form-label estilo_letra">ADULTOS</label>			
+							<select id="s_adul" name="sel_adult" class="col-3">
+								<option value="1" selected="selected">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>						
+							</select>
+						</div>
+						<!--Número de niños-->
+						<div>
+							<label for="nin" class="col-5 col-form-label estilo_letra">NIÑOS</label>
+							<select id="nin" name="sel_children" class="col-3">
+								<option value="0" selected="selected">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+					</div>
+					
+					<div id="der">
+						<h5 class="estilo_letra">Horarios</h5>
+						<!--Hora de entrada-->
+						<div class="form-group row">
+							<label for="h_entr" class="col-5 col-form-label estilo_letra"> HORA DE ENTRADA</label>
+							<div class="col-7">
+								<input id="h_entr" class="form-control" type="time" name="hora_entrada" value="00:00" required>
+							</div>
+						</div>
+
+						<!--Hora de salida-->
+						<div class="form-group row">
+							<label for="h_sal" class="col-5 col-form-label estilo_letra"> HORA DE SALIDA</label> 
+							<div class="col-7">
+								<input id="h_sal" class="form-control" type="time" name="hora_salida" value="01:00" required>
+							</div>
+						</div>
+
+						<!--Fecha de entrada-->
+						<div class="form-group row">
+							<label for="cal_en" class="col-5 col-form-label estilo_letra"> ENTRADA</label>
+							<div class="col-7">
+								<input id="cal_en" class="form-control" type="date" name="calendario_entrada" value="2021-01-01" required>
+							</div>
+						</div>
+
+						<!--Fecha de salida-->
+						<div class="form-group row">
+							<label for="cal_sal" class="col-5 col-form-label estilo_letra"> SALIDA</label> 
+							<div class="col-7">
+								<input id="cal_sal" class="form-control" type="date" name="calendario_salida" value="2021-01-02" required>
+							</div>
+						</div>					
+
+						<div class="Enviar Formulario">
+							<button type="submit" class="btn btn-primary">
+								Enviar
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<hr>
+
+		<!--Footer, contacto y copyright-->
+		<footer id = "footer_id" >
+			<div>
+				Correo:<a href="mailto:hotelesmagnificos@gmail.com"> hotelesmagnificos@gmail.com</a>
+			</div>
+
+			 <div class="text-center p-3" >
+    			© 2020 Copyright.
+    		</div>
+		</footer>
+
+		<script src="js/bootstrap.js"></script>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+		<script src="js/sweetalert2.js"></script>
+		<script src="js/validacionFormulario.js"></script>
+	</body>
+</html>

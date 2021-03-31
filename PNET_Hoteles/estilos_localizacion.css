@@ -1,0 +1,30 @@
+p
+{
+	margin:  25px 50px 75px 100px;
+}
+
+.fondo_loc
+{
+	background-color: rgb(222, 241, 245);
+	background-image: linear-gradient(rgb(223, 244, 248), #F8E4E4);
+	margin-top: 9%;
+}
+
+.mapa
+{
+	text-align: center;
+}
+
+#texto
+{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+@media screen and (max-width: 850px)
+{
+	.fondo_loc
+	{
+		margin-top: 15%;
+	}
+}

@@ -1,0 +1,55 @@
+h4, h5
+{
+   text-align: center;
+}
+
+.enlaces
+{
+   color: inherit;
+}
+
+.datos_personales
+{
+   padding: 30px;
+   margin-left: 20%;
+   width: 800px;
+}
+
+.otros_datos
+{
+   overflow: hidden;
+   padding: 30px;   
+}
+
+#formulario
+{
+   padding: 1%;
+   text-align: justify;
+   background-color: rgb(198, 228, 235);
+   background-image: linear-gradient(rgb(198, 228, 235), #F8E4E4);
+   margin-top: 9%;
+}
+
+#izq
+{
+   float: left;
+   left: 50%;
+   width: 500px;
+   margin-left: 5%;
+}
+
+#der
+{
+   float: right;
+   right: 50%;
+   width: 500px;
+   margin-right: 10%;
+}
+
+@media screen and (max-width: 850px)
+{
+   #formulario
+   {
+      margin-top: 15%;
+   }
+}

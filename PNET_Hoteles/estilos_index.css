@@ -1,0 +1,80 @@
+.fondo_index
+{
+   background-color: rgb(222, 241, 245);
+   background-image: linear-gradient(rgb(223, 244, 248), #F8E4E4, rgb(223, 244, 248));
+   margin-top: 7%;
+}
+
+.wrapper_info
+{
+   overflow: hidden;
+   padding: 30px;
+}
+
+.wrapper_res
+{
+   overflow: hidden;
+   padding: 10px;
+}
+
+.enlace_interno
+{
+   margin-left: 5%;
+}
+
+#formulario
+{
+   float: left;
+   left: 35%;
+   width: 35%;
+   padding: 1%;
+   margin-top: 5%;
+   text-align: justify;
+   background-color: #F8E4E4;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#formulario h4
+{
+   text-align: center;
+}
+
+#fondo
+{
+   float: right;
+   right: 65%;
+   width: 850px;
+   height: 500px;
+   background: url('fondo.jpg');
+   opacity: 1;
+}
+
+#hotel_info
+{
+   float: left;
+   width: 50%;
+}
+
+#noticias
+{
+   float: right;
+   width: 40%;
+}
+
+@media screen and (max-width: 850px)
+{
+   .fondo_index
+   {
+      margin-top: 15%;
+   }
+}
+
+@media screen and (max-width: 850px)
+{
+   #fondo
+   {
+      width: 500px;
+      height: 322px;
+      background: url('fondochico.jpg');
+   }
+}
